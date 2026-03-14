@@ -1,3 +1,6 @@
+
+DOCS.md
+
 # Environment variables — never commit
 .env
 .env.local
@@ -8,6 +11,11 @@ ml-service/venv/
 
 # Trained model weights (large binary files)
 ml-service/weights/*.pth
+
+# Datasets — do not redistribute
+# MovieLens: download from https://grouplens.org/datasets/movielens/100k/
+# TMDB images: fetched at runtime via seed_movies.py using your own API key
+ml-service/ml-100k/
 
 # Python cache
 __pycache__/
