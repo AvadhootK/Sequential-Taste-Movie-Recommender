@@ -1,0 +1,36 @@
+# Environment variables — never commit
+.env
+.env.local
+.env.*
+
+# Python virtual environment
+ml-service/venv/
+
+# Trained model weights (large binary files)
+ml-service/weights/*.pth
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Node dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build output
+client/dist/
+client/dist-ssr/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/*
+.idea/
+*.sw?
